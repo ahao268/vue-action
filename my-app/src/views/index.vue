@@ -3,19 +3,21 @@
   <div>
     <!-- <Props :type="type" :is-visible="false" :onChange="handleProChange"></Props> -->
     <!-- <Event :name="name" @changeName="changeName"></Event> -->
-    <PersonalInfo v-model="phoneInfo"></PersonalInfo>
+    <!-- <PersonalInfo v-model="phoneInfo"></PersonalInfo>
     <PersonalInfo
       :phone-info="phoneInfo"
       @change="(val) => (phoneInfo = val)"
     ></PersonalInfo>
-    phoneInfo: {{ phoneInfo }}
+    phoneInfo: {{ phoneInfo }} -->
+    <Watch></Watch>
   </div>
 </template>
 
 <script>
 // import Props from "./Props.vue"
 // import Event from "./Event.vue"
-import PersonalInfo from "./PersonalInfo.vue"
+// import PersonalInfo from "./PersonalInfo.vue"
+import Watch from "./Watch.vue"
 export default {
   data() {
     return {
@@ -30,7 +32,8 @@ export default {
   components: {
     // Props,
     // Event,
-    PersonalInfo,
+    // PersonalInfo,
+    Watch,
   },
   methods: {
     handleProChange() {},
